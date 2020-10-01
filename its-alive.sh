@@ -59,17 +59,19 @@ $(tput sgr 0) \n"
 
 # meat
 while read line; do
-res=$(host "$line" | grep -P 'Host.*not found.*')
 let all++
-if [[ $res =~ "not found" ]]; then
-  printf "$(tput setaf 1)[X] $line it's dead $(tput sgr 0)\n"
+host $line &>/dev/null
+retval=$?
+if [[ $retval -ne 0 ]]; then
+  printf "$(tput setaf 1)[X] [$line] it's dead $(tput sgr 0)\n"
   let dead++
 else
-  printf "$(tput setaf 2)$(tput bold)[OK] $line IT'S ALIVE! $(tput sgr 0)\n"
+  printf "$(tput setaf 2)$(tput bold)[OK] [$line] IT'S ALIVE! $(tput sgr 0)\n"
   printf "$line\n" >> $2
   let alive++
 fi
 done < $1
+# report
 alive_pc=$(bc <<< "scale=2; $alive/$all*100")
 dead_pc=$(bc <<< "scale=2; $dead/$all*100")
 echo -e "\n$(tput setaf 3)-----------------------$(tput sgr0)"

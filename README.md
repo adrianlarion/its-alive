@@ -14,11 +14,26 @@ Alternatively you could just run run `wget` with the raw version of the `its-ali
 
 `wget https://raw.githubusercontent.com/truffle-dog/its-alive/master/its-alive.sh`. Afterwards just run the script from there
 
+### Usage 
 
-### Usage example
+**Domains/subdomains  file should be in the form:**
+```
+scanme.nmap.org
+google.com
+```
+Using `https://google.com` won't work.
+
 ![Example](./docs/usage_example.svg)
 
+# warnings
 
+
+
+**USE AT YOUR OWN RISK**
+
+
+
+**USE RESPONSIBLY**
 
 # credits:
 inspired by a technique shown this article:
