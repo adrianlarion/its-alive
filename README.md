@@ -8,10 +8,14 @@ Saves the live domains/subdomains in a file.
 
 
 
+---
+#WARNING: use responsibly!!
+---
 
-**Use responsibly**
 
-### credits:
+
+
+# credits:
 inspired by a technique shown this article:
 
 
