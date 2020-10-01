@@ -1,6 +1,8 @@
 # its-alive
-Uses `host` command  to check if a subdomain/domain it's alive (by performing DNS lookups). 
-Saves the live domains/subdomains in a file.
+* Uses `host` command  to check if a subdomain/domain it's alive (by performing DNS lookups). 
+* Saves the live domains/subdomains in a file.
+* shows report of how many are alive and  dead (including percentages)
+
 
 ### Install
 * go to your apps dir (or where you want this installed). eg: `cd ~/apps`
@@ -35,6 +37,8 @@ Using `https://google.com` won't work.
 
 **USE RESPONSIBLY**
 
+
+
 # credits:
 inspired by a technique shown this article:
 
@@ -46,4 +50,4 @@ https://www.hackerone.com/blog/Guide-Subdomain-Takeovers
 
 
 
-(however the technique shown there doesn't permit to end the script with Ctrl+C)
+(however the technique shown there doesn't permit to end the script with Ctrl+C for some reason)
