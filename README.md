@@ -11,6 +11,7 @@ Saves the live domains/subdomains in a file.
 export PATH="~/apps/its-alive:$PATH" 
 ```
 Alternatively you could just run run `wget` with the raw version of the `its-alive.sh` like so:
+
 `wget https://raw.githubusercontent.com/truffle-dog/its-alive/master/its-alive.sh`. Afterwards just run the script from there
 
 
