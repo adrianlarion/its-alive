@@ -2,7 +2,7 @@
 # need a list of subs and a target file to write live subs
 function usage(){
   printf "Usage: "
-  printf "$0 [subdomains_file] [outfile]"
+  printf "$0 [subdomains_file] [outfile]\n"
 }
 if [[ "$#" -ne 2 ]]; then usage; exit ; fi
 #vars
@@ -12,7 +12,7 @@ all=0
 #empty prev results if needed
 > $2
 # graphics
-echo -e "$(tput setaf 3) 
+echo -e "$(tput setaf 3)
 (.............,.,,,,.,,,,,,,*****,,,,,,,,,,*****///////(((((((((((((((
 ,............,,,,,,,,,,,,,,,,,,***,,,,,,*,**********///(((((/(((((((((
 ..........,,,,,,,,,,,,,,,,,,,,,,*,,,,,,***************//////(/((((((((
